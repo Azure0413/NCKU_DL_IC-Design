@@ -1,0 +1,8 @@
+16:56:54 **** Incremental Build of configuration Debug for project ImageFilter ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+
+16:56:54 Build Finished (took 279ms)
+

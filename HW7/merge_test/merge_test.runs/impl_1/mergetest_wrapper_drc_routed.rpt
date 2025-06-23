@@ -1,0 +1,41 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri May  2 13:29:42 2025
+| Host         : DESKTOP-B1LSCMC running 64-bit major release  (build 9200)
+| Command      : report_drc -file mergetest_wrapper_drc_routed.rpt -pb mergetest_wrapper_drc_routed.pb -rpx mergetest_wrapper_drc_routed.rpx
+| Design       : mergetest_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| RTSTAT-10 | Warning  | No routable loads | 1          |
++-----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-10#1 Warning
+No routable loads  
+19 net(s) have no routable loads. The problem bus(es) and/or net(s) are mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/mergedFifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i, mergetest_i/merge_v1_0_0/inst/merge_v1_0_S00_AXI_inst/mc/arrayFifo2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (the first 15 of 19 listed).
+Related violations: <none>
+
+

@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Mar 27 18:48:07 2025
+| Host         : DESKTOP-OGE0C9T running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file voting_machine_control_sets_placed.rpt
+| Design       : voting_machine
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            6 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              35 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             144 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------+----------------------------------------+------------------+----------------+
+|  Clock Signal  |       Enable Signal       |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+---------------------------+----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                           | rst_IBUF                               |                4 |              4 |
+|  clk_IBUF_BUFG | bc0/valid_vote_reg_0[0]   | vl/candidate2_vote_received[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | bc0/E[0]                  | vl/candidate3_vote_received[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | bc0/valid_vote_reg_1[0]   | vl/candidate0_vote_received[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG | bc0/valid_vote_reg_2[0]   | rst_IBUF                               |                2 |              4 |
+|  clk_IBUF_BUFG | bc1/E[0]                  | vl/candidate1_vote_received[3]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG |                           | mc/counter[0]_i_1__3_n_0               |                8 |             31 |
+|  clk_IBUF_BUFG | bc0/counter[0]_i_2_n_0    | bc0/counter[0]_i_1_n_0                 |                8 |             31 |
+|  clk_IBUF_BUFG | bc1/counter[0]_i_2__1_n_0 | bc1/counter[0]_i_1__0_n_0              |                8 |             31 |
+|  clk_IBUF_BUFG | bc2/counter[0]_i_2__0_n_0 | bc2/counter[0]_i_1__1_n_0              |                8 |             31 |
+|  clk_IBUF_BUFG | bc3/counter[0]_i_2__2_n_0 | bc3/counter[0]_i_1__2_n_0              |                8 |             31 |
++----------------+---------------------------+----------------------------------------+------------------+----------------+
+
+
