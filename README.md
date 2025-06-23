@@ -1,6 +1,6 @@
 # NCKU_DL_IC-Design  
 #### Overview the HW Link
-![Homework Link](https://docs.google.com/document/d/1HVf9E9Ei0QdzfQmIFr2N6z5zCAZ3CHaZF7I0mxWH9cg/edit?tab=t.0)  
+[Homework Link](https://docs.google.com/document/d/1HVf9E9Ei0QdzfQmIFr2N6z5zCAZ3CHaZF7I0mxWH9cg/edit?tab=t.0)  
 ## Final Project  
 #### The project aims to migrate the computationally intensive parts of the YOLOv2 neural network to the programmable logic (PL) part of the FPGA for hardware acceleration, while the processor system (PS) runs software to control the process and handle the remaining tasks.  
 ![image](https://github.com/Azure0413/NCKU_DL_IC-Design/blob/main/src/Final.png)  
@@ -28,4 +28,13 @@
 #### In this work, we are going to learn how to communicate between PC and PYNQ using UART. PC will transfer a image to PYNQ through UART. PYNQ will convert the original image to a negative image. Finally, the image will be sent back to the PC.  
 
 ## Homework 7: Designing a custom IP for Merge Operation with Xilinx Fifo Generator  
-#### 本作業需將Merge Operation的硬體電路包成Vivado的ip，以便放入軟硬整合的系統中，並完成對應的軟體設計來驗證系統的功能。本作業已提供硬體的Verilog code，請同學根據下面的教學完成包裝ip的工作，並使用sdk以及teraterm，來完成系統建置和對應sdk軟體的撰寫。目標 : 將兩個已排序好的陣列合併成一個排序好的陣列，設計一個merge operation的IP，陣列資料由處理器傳輸,合併完成的陣列也必須讀回處理器，Merge Operation(由大到小排列)
+#### 本作業需將Merge Operation的硬體電路包成Vivado的ip，以便放入軟硬整合的系統中，並完成對應的軟體設計來驗證系統的功能。本作業已提供硬體的Verilog code，請同學根據下面的教學完成包裝ip的工作，並使用sdk以及teraterm，來完成系統建置和對應sdk軟體的撰寫。目標 : 將兩個已排序好的陣列合併成一個排序好的陣列，設計一個merge operation的IP，陣列資料由處理器傳輸,合併完成的陣列也必須讀回處理器，Merge Operation(由大到小排列)  
+
+## Homework 8：CDMA系統建立與資料傳輸  
+#### 本作業須使用Xilinx IP和自製的IP來完成一套乘法的系統，此系統由CDMA搬運資料至Block memory，由硬體計算完畢後再由CDMA將資料搬回ZYNQ，本作業提供mul16.v，請同學自行包成Vivado 可用的ip，並完成系統建置和jupyter軟體設計。  
+
+## Homework 9：設計Convolution運算系統 
+#### 此作業同學必須自行完成convolution運算，作業會提供input和golden，其中input有包含input、weight和bias等資訊，同學必須自行放入系統，而golden則是正確答案給同學參考。這個作業的目的是讓同學先用 ASIC flow 實作 convolution 為之後在 FPGA 上合成做準備。ASIC合成工具會不計任何代價根據使用者的要求合成所需的硬體，FPGA 上硬體設計的自由度沒有那麼高，需要使用者配合底層的架構來設計。因為 FPGA 上合成的條件比較嚴苛，建議同學在這個作業中，一個 cycle 只進行一次乘加運算，如果在FPGA上的同一個cycle進行多個乘加運算，會超過FPGA的cycle time constraint，因此建議同學在設計架構的時候就將這點納入考慮。  
+
+## Homework 10：FPGA實作Convolution運算系統  
+#### 此作業同學必須自行完成convolution運算的ip，並用此ip來完成一個系統，作業會提供input.hex和golden.hex(至HW10_submission下載)，同學須自行將input.hex內容讀入系統，而golden.hex則是正確答案給同學參考，此作業的軟體部分需自行將運算後的結果與golden.hex比對，結果必須完全一樣，才算是功能正確，軟體端除了搬運資料外，不得有太多運算，全部的convolution運算必須在convolution ip中完成。
