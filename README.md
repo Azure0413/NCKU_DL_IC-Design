@@ -37,4 +37,5 @@
 #### 此作業同學必須自行完成convolution運算，作業會提供input和golden，其中input有包含input、weight和bias等資訊，同學必須自行放入系統，而golden則是正確答案給同學參考。這個作業的目的是讓同學先用 ASIC flow 實作 convolution 為之後在 FPGA 上合成做準備。ASIC合成工具會不計任何代價根據使用者的要求合成所需的硬體，FPGA 上硬體設計的自由度沒有那麼高，需要使用者配合底層的架構來設計。因為 FPGA 上合成的條件比較嚴苛，建議同學在這個作業中，一個 cycle 只進行一次乘加運算，如果在FPGA上的同一個cycle進行多個乘加運算，會超過FPGA的cycle time constraint，因此建議同學在設計架構的時候就將這點納入考慮。  
 
 ## Homework 10：FPGA實作Convolution運算系統  
-#### 此作業同學必須自行完成convolution運算的ip，並用此ip來完成一個系統，作業會提供input.hex和golden.hex(至HW10_submission下載)，同學須自行將input.hex內容讀入系統，而golden.hex則是正確答案給同學參考，此作業的軟體部分需自行將運算後的結果與golden.hex比對，結果必須完全一樣，才算是功能正確，軟體端除了搬運資料外，不得有太多運算，全部的convolution運算必須在convolution ip中完成。
+#### 此作業同學必須自行完成convolution運算的ip，並用此ip來完成一個系統，作業會提供input.hex和golden.hex(至HW10_submission下載)，同學須自行將input.hex內容讀入系統，而golden.hex則是正確答案給同學參考，此作業的軟體部分需自行將運算後的結果與golden.hex比對，結果必須完全一樣，才算是功能正確，軟體端除了搬運資料外，不得有太多運算，全部的convolution運算必須在convolution ip中完成。  
+![image](https://github.com/Azure0413/NCKU_DL_IC-Design/blob/main/src/hw10.png)
